@@ -24,7 +24,7 @@ const inventory = {
         }
     ]
 }
-console.log(inventory)
+console.log(inventory.items)
 
 //Proccessing
 function Update(){
@@ -36,5 +36,7 @@ console.log(inventory)
 function TotalVal(totalInventoryValue) {
   totalInventoryValue = inventory.items.reduce((sum, item) => 
     sum + (item.price * item.quantity), 0);
+  return totalInventoryValue;
 }
+const totalInventoryValue = TotalVal();
 console.log(totalInventoryValue);
