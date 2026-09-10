@@ -34,6 +34,7 @@ console.log(inventory)
 
 //Output
 function TotalVal(totalInventoryValue) {
-  totalInventoryValue = inventory.items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+  totalInventoryValue = inventory.items.reduce((sum, item) => 
+    sum + (item.price * item.quantity), 0);
 }
 console.log(totalInventoryValue);
